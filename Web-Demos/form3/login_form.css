@@ -1,0 +1,193 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   /* background-color:rgb(5, 234, 238); */
+   background-color: white;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.inner {
+   padding: 80px 20px;
+}
+
+div#container {
+   width: 100%;
+   min-height: 100vh;
+   background-color: rgba(0, 0, 0, 0.05);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+div#container section {
+   display: flex;
+   justify-content: space-between;
+   width: 85%;
+   max-width: 960px;
+   margin: 30px 0;
+   background-color: white;
+   border-radius: 20px;
+   overflow: hidden;
+   backdrop-filter: blur(5px);
+}
+
+div#container section article {
+   width: 45%;
+   background-color: darkturquoise;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+div#container section aside {
+   width: 55%;
+}
+
+h1 {
+   color: white;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+div#container section article p {
+   font-size: 20px;
+   color: white;
+   margin-top: 30px;
+}
+
+
+div#container section article a{
+   display: inline-block;
+   border: white solid 2px;
+   color: white;
+   font-size: 18px;
+   padding: 8px 50px;
+   margin-top: 30px;
+   border-radius: 25px;
+   font-weight: 700;
+   text-decoration: none;
+   transition: 0.2s all ease;
+}
+
+div#container section article a:hover{
+   background-color: white;
+   color: black;
+   border: black solid 2px;
+}
+
+h2 {
+   font-size: 40px;
+   color: darkturquoise;
+   font-weight: 700;
+}
+
+div#container section aside p {
+   font-size: 20px;
+   color: gray;
+   margin-top: 40px;
+}
+
+#socialLogin {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 15px 0;
+}
+
+.circle {
+   width: 50px;
+   height: 50px;
+   background: white;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+   position: relative;
+   box-shadow:5px 0 10px #888888;
+   margin: 0 20px;
+}
+
+.circle img {
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+
+
+
+form {
+   width: 90%;
+   max-width: 350px;
+   margin: 30px auto 0 auto;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+   width: 80%;
+   border: none;
+   background-color: rgb(229, 249, 249);
+   margin: 8px 0;
+   border-radius: 2px;
+   font-size: 18px;
+   padding: 10px 15px 8px 40px;
+   background-repeat: no-repeat;
+   background-position: 4% 50%;
+   background-size: 18px;
+}
+
+form input[type="text"] {
+   /* background-image: ; */
+}
+
+form input[type="email"] {
+   /* background-image: ; */
+}
+
+form input[type="password"] {
+   /* background-image: ; */
+}
+
+form button[type="submit"] {
+   margin-top: 20px;
+   border: none;
+   background-color: darkturquoise;
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 10px 50px;
+   border-radius: 25px;
+   transition: 0.2 all ease;
+   box-shadow: 0 2px 5px 0 #454545;
+}
+
+form button[type="submit"]:hover {
+   background-color: white;
+   color: black;
+   border: darkturquoise solid 2px;
+}
+
+@media (max-width: 760px) {
+   div#container section {
+      flex-flow: column;
+   }
+
+   div#container section article,
+   div#container section aside {
+      width: 100%;
+
+   }
+}

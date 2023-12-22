@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.body {
+    background-color: rgb(1, 1, 22);
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+  
+}
+
+.center-box {
+    position: absolute;
+    height:40%;
+    width:12%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: max-content; */
+    background-color: darkslateblue;
+    padding: 20px;
+    border-radius: 16px;
+    outline: none;
+    text-decoration: none;
+}
+
+input{
+  
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(88, 80, 140);
+    align-items: center;
+    text-align:center;
+    border: none;
+   
+}
+
+#submit{
+    height: 30px;
+    width: 90%;
+    border: none;
+    background-color: rgb(22, 168, 216);
+    color: aliceblue;
+
+}
