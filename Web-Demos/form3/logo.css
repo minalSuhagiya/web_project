@@ -1,0 +1,128 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+.main {
+   display: flex;
+   height: 100vh;
+   width: 100%;
+
+}
+.left {
+   display: flex;
+   background-color: rgb(40, 125, 125);
+   width: 40%;
+   /* height: 100vh; */
+   color: white;
+   top: 50%;
+   left: 50%;
+   padding: auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.right {
+   display: flex;
+   background-color: white;
+   /* height: 100vh; */
+   width: 60%;
+   color: rgb(40, 125, 125);
+   top: 50%;
+   left: 50%;
+   padding: auto;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.button-left {
+   border-color: white;
+   color: white;
+   background-color: rgba(255, 255, 255, 0);
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   width: 80%;
+   height: 50px;
+}
+
+.button-right {
+   border-color: rgb(40, 125, 125);
+   color: white;
+   background-color: rgb(40, 125, 125);
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   width: 80%;
+   height: 50px;
+}
+
+.content-left {
+   text-align: center;
+}
+
+.content-right {
+   text-align: center;
+}
+
+.p1 {
+   color: rgba(255, 255, 255, 0.571);
+}
+
+.p2 {
+   color: rgb(164, 164, 164);
+}
+
+.image {
+   height: 20px;
+   padding: .5vh;
+   border: 1px solid black;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+}
+
+.nameinput {
+   border: 1px solid black;
+   border-radius: 5px;
+   width: fit-content;
+   padding: 1vh;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.namevalue {
+   border: none;
+}
+
+.namevalue:focus {
+   outline: none;
+}
+
+.data {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+@media (max-width: 760px) {
+   div.main {
+      flex-flow: column;
+   }
+   div   .left .content-left,
+   div .right .content-right{
+      width: 100%;
+   }
+}

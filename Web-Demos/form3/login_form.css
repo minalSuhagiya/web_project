@@ -57,6 +57,7 @@ h1 {
    color: white;
    font-size: 30px;
    font-weight: 700;
+   /* box-shadow:5px 0 10px #888888; */
 }
 
 div#container section article p {
@@ -137,16 +138,16 @@ form {
 form input[type="text"],
 form input[type="password"],
 form input[type="email"] {
-   width: 80%;
+  
    border: none;
    background-color: rgb(229, 249, 249);
-   margin: 8px 0;
-   border-radius: 2px;
-   font-size: 18px;
-   padding: 10px 15px 8px 40px;
-   background-repeat: no-repeat;
+   /* margin: 8px 0; */
+  
+   font-size: 16px;
+   /* padding: 10px 15px 8px 40px; */
+   /* background-repeat: no-repeat;
    background-position: 4% 50%;
-   background-size: 18px;
+   background-size: 18px; */
 }
 
 form input[type="text"] {
@@ -154,7 +155,7 @@ form input[type="text"] {
 }
 
 form input[type="email"] {
-   /* background-image: ; */
+   /* background-image:url ("./IMG/Person.jpg"); */
 }
 
 form input[type="password"] {
@@ -190,4 +191,23 @@ form button[type="submit"]:hover {
       width: 100%;
 
    }
+}
+
+.imginp {
+  margin-left: 30px;
+  margin-bottom: 15px;
+   background-color: rgb(229, 249, 249);
+   border-radius: 5px;
+   width: 80%;
+   padding: 1vh;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+.imginp img{
+   background-color:rgb(229, 249, 249) ;
+   height:20px;
+   padding: 0 6px;
+   text-align: center;
 }

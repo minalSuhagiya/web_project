@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survay.css" />
+    <title>survey-form</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="center-form">
+        <h2>Construction Stakeholder Satisfacation Survey</h2>
+        <label>Date of survey</label><br />
+        <input type="date" class="input" placeholder="dd/mm/yy" /><br /><br />
+
+        <label>project name</label><br />
+        <input type="text" class="input" placeholder="" /><br /><br />
+
+        <label>surveyor</label><br />
+        <input type="text" placeholder="first" class="survey" />
+        <input type="text" placeholder="last" class="survey" /><br /><br />
+
+        <label>Stakeholder company name</label><br />
+        <input type="text" class="input" placeholder="" /><br /><br />
+
+        <label>Contact email</label><br />
+        <input type="email" class="input" placeholder="" />
+
+        <p>How satisfied are you with the following</p>
+        <table>
+          <tr>
+            <th></th>
+            <th>very dissatisfied</th>
+            <th>disatisfied</th>
+            <th>satisfied</th>
+            <th>very satisfied</th>
+          </tr>
+          <tr>
+            <td>the project's<br />communication and<br />updates?</td>
+            <td><input type="radio" name="radio" /></td>
+            <td><input type="radio" name="radio" /></td>
+            <td><input type="radio" name="radio" /></td>
+            <td><input type="radio" name="radio" /></td>
+          </tr>
+          <tr>
+            <td>the quality of the <br />construction work?</td>
+            <td><input type="radio" name="quality" /></td>
+            <td><input type="radio" name="quality" /></td>
+            <td><input type="radio" name="quality" /></td>
+            <td><input type="radio" name="quality" /></td>
+          </tr>
+          <tr>
+            <td>
+              the saftey measures<br />implemented on the<br />construction
+              site?
+            </td>
+            <td><input type="radio" name="saftey" /></td>
+            <td><input type="radio" name="saftey" /></td>
+            <td><input type="radio" name="saftey" /></td>
+            <td><input type="radio" name="saftey" /></td>
+          </tr>
+        </table>
+
+        <p>
+          Do you feel your input and concerns were adequately considered during
+          construction?
+        </p>
+        <fieldset>
+          <label>
+            <input type="radio" placeholder="yes" />
+            yes</label
+          >
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
