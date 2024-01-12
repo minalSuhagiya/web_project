@@ -37,8 +37,23 @@ input{
    margin: 5px;
    padding: 5px;
    font-size: 15px;
+  
+   
    
 }
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=color],
+select{
+  border: none;
+  border-bottom: 1px solid rgb(182, 178, 178);
+  width: 150px;
+  /* padding: 5px; */
+  /* outline: none; */
+}
+
 
 .general_box{
    display: flex;
@@ -51,6 +66,7 @@ input{
    flex-direction: column;
    gap: 10px;
 }
+
 .message-box{
    display: flex;
    flex-direction: column;

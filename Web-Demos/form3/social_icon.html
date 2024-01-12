@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>social-icon</title>
+    <style>
+      section {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(163, 185, 225);
+      }
+      nav {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(253, 247, 247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        position: relative;
+        box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.3s all ease-in-out;
+      }
+      a img{
+        width: 30px;
+        height: 30px;
+        transition: 0.3s all ease-in-out;
+        color: white;
+      }
+
+      a span {
+        position: absolute;
+        color: aliceblue;
+        transform: translateY(0px);
+        font-size: 18px;
+        padding: 5px 10px;
+        transition: 0.3 all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-delay: 0s;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      a span::before {
+        position: absolute;
+        content: "";
+        border-left: 5px solid transparent;
+        border-top: 5px solid #fff;
+        border-right: 5px solid transparent;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      a.facebook span {
+        background-color: #3b5998;
+      }
+      a.facebook span::before {
+        border-top-color: #3b5998;
+      }
+
+      a.twitter span {
+        background-color: #1da1f2;
+      }
+      a.twitter span::before {
+        border-top-color: #1da1f2;
+      }
+      a.instagram span {
+        background: linear-gradient(135deg, #833ab4, #fd1d1d);
+      }
+      a.instagram span::before {
+        border-top-color: #fd1d1d;
+      }
+      a:hover {
+        box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.5);
+      }
+      a:hover span {
+        transform: translateY(-80px);
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0.2s;
+      }
+      a.facebook:hover {
+        background-color: #3b5998;
+    
+      }
+      a.twitter:hover {
+        background-color: #1da1f2;
+      }
+      a.instagram:hover {
+        background: linear-gradient(135deg, #833ab4, #fd1d1d);
+      }
+    a .icon-hover{
+      display: none;
+    }
+    a:hover .icon{
+      display: none;
+    }
+    a:hover .icon-hover{
+      display: block;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <a href="#" class="facebook">
+          <span>Facebook</span>
+          <img src="../assets/image/facebook.svg" class="icon" />
+          <img src="../assets/image/fab-white.svg" class="icon-hover">
+        </a>
+        <a href="#" class="twitter">
+          <span>Twitter</span>
+          <img src="../assets/image/twitter.svg" class="icon"/>
+          <img src="../assets/image/twi.svg" class="icon-hover">
+        </a>
+        <a href="#" class="instagram">
+          <span>instagram</span>
+          <img src="../assets/image/instagram.svg"class="icon" />
+          <img src="../assets/image/in.svg" class="icon-hover">
+        </a>
+      </nav>
+    </section>
+  </body>
+</html>
